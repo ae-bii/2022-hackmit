@@ -1,11 +1,12 @@
-import './App.css';
+import "./App.css";
+import CommunitySlider from "./CommunitySlider";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      
+      <CommunitySlider />
     </div>
   );
-}
+};
 
 export default App;
