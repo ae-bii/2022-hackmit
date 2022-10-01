@@ -1,4 +1,4 @@
-import "./style.css";
+import "../style.css";
 import Carousel from "nuka-carousel";
 import React from "react";
 
