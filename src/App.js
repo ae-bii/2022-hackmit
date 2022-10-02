@@ -1,6 +1,5 @@
-import './App.css';
-import Header from './components/Header';
 import "./App.css";
+import Header from './components/Header';
 import CommunitySlider from "./components/CommunitySlider";
 import Footer from './components/Footer';
 import Resources from './components/Resources';

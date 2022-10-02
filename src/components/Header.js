@@ -1,7 +1,7 @@
 const Header = () => (
   <nav>
     <div className="nav-wrapper" style={{backgroundColor: "#003865", fontFamily: "sans-serif"}}>
-      <a href="#" className="brand-logo right">.Roaree</a>
+      <a href="#" className="brand-logo right">.roaree</a>
       <ul id="nav-mobile" className="left hide-on-med-and-down">
         <li><a href="">About</a></li>
         <li><a href="">Community</a></li>
