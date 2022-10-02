@@ -8,15 +8,7 @@ Created on Sat Oct  1 20:00:23 2022
 
 import iris 
 
-model_file_name = <model file name>
 
-def test_model(data, model_path):
-    USING {"file_name" : model_path}
-    CREATE ML CONFIGURATION pmml_configuration PROVIDER PMML USING {"file_name" : "C:\PMML\pmml_house_model.xml"}
-    SET ML CONFIGURATION pmml_configuration
-    CREATE MODEL HousePriceModel PREDICTING (Price) WITH (TotSqft numeric, num_beds integer, num_baths numeric)
-    TRAIN MODEL HousePriceModel FROM HouseData
-    SELECT * FROM NewHouseData WHERE PREDICT(HousePriceModel) > 500000
     
 
 def main():
@@ -25,10 +17,17 @@ def main():
     password = ".Roarfile22"
     
     connection = iris.connect(connection_string, username, password)
-    test_model()
     
+    cursor = connection.cursor()
     
-    
+    sql_command =  """ CREATE ML CONFIGURATION pmml_configuration PROVIDER PMML USING {"file_name" : {model_path}},
+    SET ML CONFIGURATION pmml_configuration,
+    CREATE MODEL ml_model PREDICTING ({result}) WITH ({metrics}),
+    TRAIN MODEL model FROM data,
+    SELECT * FROM data
+    """
+    cursor.execute(sql_command)
 
 if __name__ == "__main__":
     main()
+
