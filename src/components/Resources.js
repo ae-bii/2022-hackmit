@@ -11,8 +11,8 @@ const Resources = () => (
                 <ModelSlider />
             </div>
             <div>
-            <h2>
-                Paper
+                <h2>
+                    Paper
                 </h2>
                 <PaperSlider />
             </div>
