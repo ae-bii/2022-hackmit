@@ -11,21 +11,23 @@ const Resources = () => (
                 </h2>
                 <ModelSlider />
             </div>
-            <div>
+            <div style={{marginBottom: "15px"}}>
                 <h2 class="papers">
                     Paper
                 </h2>
                 <PaperSlider />
             </div>
         </div>
-        <div className="pipelines" style={{width: "50%"}}>
-            <p>Pipelines</p>
-            <div className="piplines" style={{backgroundColor: "grey"}}>
-                <a href="/" class="waves-effect waves-light btn" style={{left: "30%", width: "40%", display: "block", marginBottom: "10px", backgroundColor: "#003865"}}>Upload Your Data</a>
-                <a href="/" class="waves-effect waves-light btn" style={{left: "30%", width: "40%", display: "block", marginBottom: "10px", backgroundColor: "#003865"}}>Select Preprocesing Methods</a>
-                <a href="/" class="waves-effect waves-light btn" style={{left: "30%", width: "40%", display: "block", marginBottom: "10px", backgroundColor: "#003865"}}>Select Model</a>
-                <a href="/" class="waves-effect waves-light btn" style={{left: "30%", width: "40%", display: "block", marginBottom: "10px", backgroundColor: "#003865"}}>Select Evaluation Methods</a>
-                <a href="/" class="waves-effect waves-light btn" style={{left: "30%", width: "40%", display: "block", marginBottom: "10px", backgroundColor: "#003865"}}>View Results</a>
+        <div className="pipelines" style={{textAlign: "left", width: "50%", marginLeft: "20%"}}>
+            <div>
+                <h2 style={{textAlign: "center", fontSize: "2em", left: "50%"}}>Pipelines</h2>
+            </div>
+            <div className="piplines" style={{textAlign: "left", backgroundColor: "grey"}}>
+                <a href="/" class="waves-effect waves-light btn" style={{width: "200px", display: "block", marginBottom: "30px", backgroundColor: "#003865"}}>Upload Your Data</a>
+                <a href="/" class="waves-effect waves-light btn" style={{width: "200px", display: "block", marginBottom: "30px", backgroundColor: "#003865"}}>Select Preprocesing Methods</a>
+                <a href="/" class="waves-effect waves-light btn" style={{width: "200px", display: "block", marginBottom: "30px", backgroundColor: "#003865"}}>Select Model</a>
+                <a href="/" class="waves-effect waves-light btn" style={{width: "200px", display: "block", marginBottom: "30px", backgroundColor: "#003865"}}>Select Evaluation Methods</a>
+                <a href="/" class="waves-effect waves-light btn" style={{width: "200px", display: "block", marginBottom: "30px", backgroundColor: "#003865"}}>View Results</a>
             </div>        
             
         </div>
