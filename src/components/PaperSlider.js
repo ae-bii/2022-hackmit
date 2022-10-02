@@ -2,7 +2,7 @@ import "../style.css";
 import Carousel from "nuka-carousel";
 import React from "react";
 
-const ModelSlider = () => {
+const PaperSlider = () => {
   return (
     <Carousel renderCenterLeftControls="null" renderCenterRightControls="null" wrapAround="true" cellAlign='center'>
       <img alt="" src="https://via.placeholder.com/600x200" />
@@ -13,4 +13,4 @@ const ModelSlider = () => {
     </Carousel>
   );
 };
-export default ModelSlider;
+export default PaperSlider;
